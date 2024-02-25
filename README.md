@@ -1,6 +1,6 @@
 # The Rust on ESP Book
 
-이 리포지토리는 "The Rust on ESP" 채그이 소스를 가지고있습니다
+이 리포지토리는 "The Rust on ESP" 의 소스를 가지고있습니다
 
 ## 빠른 시작
 
