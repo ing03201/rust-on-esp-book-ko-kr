@@ -10,7 +10,7 @@
 cargo install mdbook mdbook-mermaid
 ```
 
- `mdbook` 과`mdbook-mermaid` 가 설치되었다면, 아래를 실행하여 리포지토리를 복제하고 개발 서버를 시작할 수 있습니다:
+ `mdbook` 과`mdbook-mermaid` 가 설치되었다면, 아래를 실행하여 리포지토리를 클론하여 개발 서버를 시작할 수 있습니다:
 
 ```shell
 git clone https://github.com/esp-rs/book
