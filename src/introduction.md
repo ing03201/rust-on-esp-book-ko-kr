@@ -19,7 +19,7 @@ Rust on ESP 관련 툴과 라이브러리는 Gihtub의 [esp-rs organization][esp
 
 ## 이 책의 독자층
 
-이 책은 Rust에 대한 경험이 있는 사람들을 대상으로 하며, 임베디드 개발 및 전자제품에 대한 초보적인 지식을 전제로 합니다. 위 경험이 없는 사람들에게는 먼저 [가정 및 전제조건][가정 및 전제조건]과 [리소스][리소스]섹션을 읽어보고 최신 정보를 얻도록 권장합니다
+이 책은 Rust에 대한 경험이 있는 사람들을 대상으로 하며, 임베디드 개발 및 전자제품에 대한 초보적인 지식을 전제로 합니다. 위 경험이 없는 사람들에게는 먼저 [가정 및 전제조건][전제조건]과 [리소스][리소스]섹션을 읽어보고 최신 정보를 얻도록 권장합니다
 
 [prerequisites]: #가정-및-전제조건
 [resources]: #리소스
@@ -110,5 +110,5 @@ Rust on ESP 관련 툴과 라이브러리는 Gihtub의 [esp-rs organization][esp
 [mit-license]: https://opensource.org/licenses/MIT
 [apache-license]: http://www.apache.org/licenses/LICENSE-2.0
 [cc-license]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
-[가정 및 전제조건]: #가정-및-전제조건
+[전제조건]: #가정-및-전제조건
 
