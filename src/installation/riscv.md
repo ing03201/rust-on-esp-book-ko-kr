@@ -1,17 +1,17 @@
-# `RISC-V` Targets Only
+# `RISC-V` 타겟 only
 
-To build Rust applications for the Espressif chips based on `RISC-V` architecture, do the following:
+`RISC-V` 구조 기반 Espressif chips의 어플리케이션을 빌드하려면 다음을 따라주세요
 
-1. Install the [`nightly`][rustup-book-channel-nightly] toolchain with the `rust-src` [component][rustup-book-components]:
+1. `rust-src` [component][rustup-book-components]와 함께 [`nightly`][rustup-book-channel-nightly] 툴체인을 설치해주세요:
 
     ```shell
     rustup toolchain install nightly --component rust-src
     ```
 
-    The above command downloads the rust source code. `rust-src` contains things like the std-lib, core-lib and build-config files.  
-    Downloading the `rust-src` is important because of two reasons : 
-    - **Determinism** - You get the chance to inspect the internals of the core and std library. If you are building software that needs to be determinate, you may need to inspect the libraries that you are using.  
-    - **Building custom targets** - The `rustc` uses the `rust-src` to create the components of a new custom-target. If you are targeting a triple-target that is not yet supported by rust, it becomes essential to download the `rust-src`.
+    위의 명령은 rust 소스 코드를 다운로드합니다. `rust-src`는 std-lib, core-lib and build-config와 같은 항목들을 포함합니다.  
+    `rust-src`를 다운로드하는것은 두 가지 이유때문에 중요합니다: 
+    - **Determinism(결정론)** - core와 std 라이브러리의 내부를 볼 수 있습니다. 높은 수준의 확실성이 필요한 소프트웨어를 작성해야하는 경우, 사용 중인 라이브러리를 확인하는 것이 좋습니다.  
+    - **custom targets 빌드하기** - `rustc`는 새 커스텀 타겟의 컴포넌트를 만들때 `rust-src`를 사용한다. 만약 rust에서 지원을 안하는 triple-target을 타겟으로 할때, `rust-src` 다운로드는 필수입니다.
 
    For more info on custom targets, read this [Chapter][embedonomicon-creating-a-custom-target] from the [Embedonomicon][embedonomicon-official-book].
 
