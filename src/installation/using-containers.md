@@ -1,20 +1,24 @@
-# Using Containers
+# Containers 사용하기
 
-Instead of installing directly on your local system, you can host the development environment inside a container. Espressif provides the [`idf-rust`][idf-rust] image that supports both `RISC-V` and `Xtensa` target architectures and enables both `std` and `no_std` development.
+로컬 시스템에 직접 설치하는 대신, 컨테이너 내에서 개발 환경을 호스팅할 수 있습니다. Espressif는 `RISC-V`와 `Xtensa` 대상 아키텍처를 모두 지원하고 `std`와 `no_std` 개발을 모두 가능하게 하는 [`idf-rust`][idf-rust] 이미지를 제공합니다.
 
-You can find numerous tags for `linux/arm64`, and `linux/amd64` platforms.
+`linux/arm64` 및 `linux/amd64` 플랫폼에 대한 수많은 태그를 찾을 수 있습니다.
 
-For each Rust release, we generate the tag with the following naming convention:
+각 Rust 릴리스에 대해, 우리는 다음과 같은 명명 규칙으로 태그를 생성합니다:
 
 - `<chip>_<rust-toolchain-version>`
   - For example, `esp32_1.64.0.0` contains the ecosystem for developing `std`, and `no_std` applications for `ESP32` with the `1.64.0.0` `Xtensa` Rust toolchain.
+  - 예를 들어, `esp32_1.64.0.0`에는 `std`를 개발하기 위한 생태계와  `1.64.0.0` `Xtensa` Rust 툴체인이 있는  `ESP32`용 `no_std` 애플리케이션이 포함되어 있습니다.
 
-There are special cases:
+특별 케이스가 있다.:
 
-- `<chip>` can be `all` which indicates compatibility with all Espressif targets
+- `<chip>`은 모든 Espressif 대상과의 호환성을 나타내는 모든 것이 될 수 있습니다.
 - `<rust-toolchain-version>` can be `latest` which indicates the latest release of the `Xtensa` Rust toolchain
+- `<rust-toolchain-version>`은  `Xtensa` Rust 툴체인의  `최신` 릴리스를 나타내는 최신일 수 있습니다.
 
 Depending on your operating system, you can choose any container runtime, such as [Docker][docker], [Podman][podman], or [Lima][lima].
+
+운영 체제에 따라 [Docker][docker], [Podman][podman], 또는 [Lima][lima]와 같은 컨테이너 런타임을 선택할 수 있습니다.
 
 [docker]: https://www.docker.com/
 [podman]: https://podman.io/
