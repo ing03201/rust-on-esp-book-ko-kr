@@ -11,7 +11,7 @@
   - [`std` 개발 요구사항](./installation/std-requirements.md)
   - [컨테이너 사용하기](./installation/using-containers.md)
 - [자신만의 어플리케이션 만들기](./writing-your-own-application/index.md)
-  - [템플릿으로 부터 프로젝트 만들기](./writing-your-own-application/generate-project/index.md)
+  - [템플릿으로 프로젝트 만들기](./writing-your-own-application/generate-project/index.md)
     - [`esp-template`의 이해](./writing-your-own-application/generate-project/esp-template.md)
     - [`esp-idf-template`의 이해](./writing-your-own-application/generate-project/esp-idf-template.md)
   - [`no_std` 어플리케이션 만들기](./writing-your-own-application/nostd.md)

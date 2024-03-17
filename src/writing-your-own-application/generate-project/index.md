@@ -1,32 +1,37 @@
-# Generating Projects from Templates
+# 템플릿으로 프로젝트 만들기
 
-We currently maintain two template repositories:
-- [`esp-template`][esp-template] - `no_std` template.
-- [`esp-idf-template`][esp-idf-template] - `std` template.
+현재 두 템플릿 레포지토리를 유지하고있습니다.
+- [`esp-template`][esp-template] - `no_std` 템플릿
+- [`esp-idf-template`][esp-idf-template] - `std` 템플릿
 
-Both templates are based on [`cargo-generate`][cargo-generate], a tool that allows you to create a new project based on some existing template. In our case, [`esp-idf-template`][esp-idf-template] or [`esp-template`][esp-template] can be used to generate an application with all the required configurations and dependencies.
+두 템플릿 모두 기존 템플릿을 기반으로한 새 프로젝트를 만들 수 있는 도구 [`cargo-generate`][cargo-generate] 기반으로 합니다. 
 
-1. Install `cargo generate`:
+두 템플릿 모두 기존 템플릿을 기반으로 새 프로젝트를 만들 수 있는 도구인  [`cargo-generate`][cargo-generate]를 기반으로 합니다. 우리의 경우,  [`esp-idf-template`][esp-idf-template] 또는  [`esp-template`][esp-template]를 사용하여 필요한 모든 구성과 종속성을 가진 애플리케이션을 생성할 수 있습니다.
+
+1.  `cargo generate`를 설치합니다:
     ```shell
     cargo install cargo-generate
     ```
-2. Generate a project based on one of the templates:
+    
+2. 템플릿 중 하나를 기반으로 프로젝트를 생성하세요.:
     - `esp-template`:
+        
         ```shell
         cargo generate esp-rs/esp-template
         ```
-        See [Understanding `esp-template`][understanding-esp-template] for more details on the template project.
+        템플릿 프로젝트에 대한 자세한 내용은 [Understanding `esp-template`][understanding-esp-template]을 참조하십시오.
     - `esp-idf-template`:
+        
         ```shell
         cargo generate esp-rs/esp-idf-template cargo
         ```
-        See [Understanding `esp-idf-template`][understanding-esp-idf-template] for more details on the template project.
+        템플릿 프로젝트에 대한 자세한 내용은 [Understanding `esp-idf-template`][understanding-esp-idf-template]을 참조하십시오.
 
-    When the `cargo generate` subcommand is invoked, you will be prompted to answer several questions regarding the target of your application. Upon completion of this process, you will have a buildable project with all the correct configurations.
-
-3. Build/Run the generated project:
-   - Use `cargo build` to compile the project using the appropriate toolchain and target.
-   - Use `cargo run` to compile the project, flash it, and open a serial monitor with our target device.
+    `cargo generate` 서브커맨드가 호출되면, 타겟 앱에 관한 몇 가지 질문에 답하라는 메시지가 표시됩니다. 이 과정이 완료되면, 당신은 모든 올바른 구성으로 빌드 가능한 프로젝트를 갖게 될 것입니다.
+    
+3. 생성된 프로젝트를 빌드/실행하세요:
+   - `cargo build`를 사용하여 적절한 툴체인과 대상을 사용하여 프로젝트를 컴파일하세요.
+   - `cargo run`을 사용하여 프로젝트를 컴파일하고, 플래시하고, 타겟 장치로 시리얼 모니터를 여세요.
 
 [cargo-generate]: https://github.com/cargo-generate/cargo-generate
 [esp-idf-template]: https://github.com/esp-rs/esp-idf-template
@@ -34,11 +39,11 @@ Both templates are based on [`cargo-generate`][cargo-generate], a tool that allo
 [understanding-esp-template]: ./esp-template.md
 [understanding-esp-idf-template]: ./esp-idf-template.md
 
-## Using Dev Containers in the Templates
+## 템플릿에서 개발 컨테이너 사용하기
 
-Both template repositories have a prompt for Dev Containers support, see details in [Dev Containers][dev-container] section of the template README.
+두 템플릿 저장소 모두 Dev Containers 지원에 대한 프롬프트가 있습니다. 템플릿 README의 [Dev Containers][dev-container]  섹션에서 자세한 내용을 참조하십시오.
 
-Dev Containers use the [`idf-rust`][idf-rust] container image, which was explained in the [Using Container][using-container] section of the [Setting up a Development Environment][setting-env] chapter. This image provides an environment ready to develop Rust applications for Espressif chips with no installation required. Dev Containers also have integration with [Wokwi simulator][wokwi], to simulate the project, and allow flashing from the container using [`web-flash`][web-flash].
+개발 컨테이너는 [Setting up a Development Environment][setting-env]장의 [Using Container][using-container] 섹션에서 설명된 [`idf-rust`][idf-rust] 컨테이너 이미지를 사용합니다. 이 이미지는 설치 없이 Espressif 칩용 Rust 애플리케이션을 개발할 준비가 된 환경을 제공합니다. Dev Containers는 또한 [Wokwi simulator][wokwi] 시뮬레이터와 통합하여 프로젝트를 시뮬레이션하고 [`web-flash`][web-flash]를 사용하여 컨테이너에서 깜박일 수 있습니다.
 
 [dev-container]: https://github.com/esp-rs/esp-template/tree/main/docs#dev-containers
 [idf-rust]: https://hub.docker.com/r/espressif/idf-rust/tags
