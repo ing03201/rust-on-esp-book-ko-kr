@@ -1,27 +1,28 @@
-# Writing `std` Applications
+# `std` 어플리케이션 만들기
 
-If you want to learn how to develop `std` application, see the following training materials developed alongside [Ferrous Systems][ferrous-systems]:
-- The book [Embedded Rust on Espressif][std-book]
-- The repository [`std-training`][std-repository]
+`std` 애플리케이션을 개발하는 방법을 배우고 싶다면, [Ferrous Systems][ferrous-systems]와 함께 개발된 다음 교육 자료를 참조하십시오:
+
+-  [Embedded Rust on Espressif][std-book]
+-  [`std-training`][std-repository] 레포지토리
 
 The training is based on [ESP32-C3-DevKit-RUST-1][esp-rust-board]. You can use any other Espressif development board, but code changes and configuration changes might be needed.
 
-The training is split into two parts:
+교육은 [ESP32-C3-DevKit-RUST-1][esp-rust-board]을 기반으로 합니다. 다른 Espressif 개발 보드를 사용할 수 있지만, 코드 변경과 구성 변경이 필요할 수 있습니다.
 
-* [Introductory level examples][intro]:
+* [입문 수준의 예제][intro]:
    * [A basic hardware-check][hardware-check]
    * [An HTTP Client][http-client]
    * [An HTTP Server][http-server]
    * [An MQTT Client][mqtt]
-* [Advanced level examples][advanced]:
-   * Low-level GPIO
-   * Interrupts in General
+* [고급 수준의 예제][advanced]:
+   * 로우레벨 GPIO
+   * 일반적인 상황의 인터럽트
    * [I2C Driver][i2c-driver]
    * [I2C Sensor Reading][i2c-sensor-reading]
    * [GPIO/Button Interrupts][button-interrupt]
-   * Driving an RGB LED
+   * RGB LED 조작
 
-> ⚠️ **Note**: There are several examples covering the use of specific peripherals under the examples' folder of  [`esp-idf-hal`][esp-idf-hal]. I.e. [`esp-idf-hal/examples`][esp-idf-hal-examples].
+> ⚠️ **참고**: [`esp-idf-hal`][esp-idf-hal]의 예제 폴더 아래에 특정 주변 장치의 사용을 다루는 몇 가지 예가 있습니다. 즉,  [`esp-idf-hal/examples`][esp-idf-hal-examples].
 
 [ferrous-systems]: https://ferrous-systems.com/
 [std-book]: https://esp-rs.github.io/std-training/
