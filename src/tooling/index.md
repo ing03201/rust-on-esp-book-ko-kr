@@ -1,8 +1,5 @@
-# Tooling
+# 개발도구
 
-Now that we have our required dependencies installed, and we know how to generate a
-template project, we will cover, in more detail, some tools. These tools will make
-developing Rust applications for Espressif chips a lot easier.
+이제 필요한 종속성을 설치했고, 템플릿 프로젝트를 생성하는 방법을 알고 있기 때문에, 몇 가지 도구를 더 자세히 다룰 것입니다. 이 도구들은  Espressif chips을 위한 Rust 애플리케이션을 훨씬 쉽게 개발할 것이다.
 
-In this chapter, we will present `espflash`/`cargo-espflash`, suggest Visual Studio Code as IDE and, dig into the
-currently available simulation and debugging methods.
+이 장에서, 우리는  `espflash`/`cargo-espflash`를 제시하고, Visual Studio Code를 IDE로 제안하고, 현재 사용 가능한 시뮬레이션 및 디버깅 방법을 파헤칠 것입니다.

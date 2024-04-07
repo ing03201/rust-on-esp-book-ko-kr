@@ -1,19 +1,19 @@
 
 # OpenOCD
 
-Similar to [`probe-rs`][probe-rs], OpenOCD doesn't have support for the `Xtensa` architecture. However, Espressif does maintain a fork of OpenOCD under [`espressif/openocd-esp32`][espressif-openocd-esp32] which has support for Espressif's chips.
+[`probe-rs`][probe-rs]와 마찬가지로, OpenOCD는  `Xtensa` 아키텍처를 지원하지 않습니다. 그러나, Espressif는 Espressif의 칩을 지원하는  [`espressif/openocd-esp32`][espressif-openocd-esp32] 리포지토리에서 OpenOCD의 fork 리포지토리를 유지합니다.
 
-Instructions on how to install `openocd-esp32` for your platform can be found in [the Espressif documentation][espressif-documentation].
+플랫폼에  `openocd-esp32`를 설치하는 방법에 대한 지침은 [Espressif 문서][espressif-documentation]에서 찾을 수 있습니다.
 
-GDB with all the Espressif products supported can be obtained in [`espressif/binutils-gdb`][binutils-repo].
+지원되는 모든 Espressif 제품이 있는 GDB는  [`espressif/binutils-gdb`][binutils-repo]에서 얻을 수 있습니다.
 
-Once installed, it's as simple as running `openocd` with the correct arguments. For chips with the built-in  [`USB-JTAG-SERIAL` peripheral][usb-jtag-serial], there is normally a config file that will work out of the box, for example on the ESP32-C3:
+일단 설치되면, 올바른 인수로  `openocd`를 실행하는 것만큼 간단합니다. [`USB-JTAG-SERIAL` peripheral 장치][usb-jtag-serial]가 내장된 칩의 경우, 일반적으로 ESP32-C3에서 즉시 작동하는 구성 파일이 있습니다.
 
 ```shell
 openocd -f board/esp32c3-builtin.cfg
 ```
 
-For other configurations, it may require specifying the chip and the interface, for example, ESP32 with a J-Link:
+다른 구성의 경우, 칩과 인터페이스를 지정해야 할 수 있습니다. 예를 들어, J-Link가 있는 ESP32:
 
 ```shell
 openocd -f interface/jlink.cfg -f target/esp32.cfg
@@ -27,19 +27,19 @@ openocd -f interface/jlink.cfg -f target/esp32.cfg
 
 ## VS Code Extension
 
-OpenOCD can be used in VS Code via the [`cortex-debug`][cortex-debug] extension to debug Espressif products.
+OpenOCD는 Espressif 제품을 디버깅하기 위해  [`cortex-debug`][cortex-debug] 확장을 통해 VS 코드에서 사용할 수 있습니다.
 
 [cortex-debug]: https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug
 
 ### Configuration
 
-1. If required, connect the external JTAG adapter.
-   1. See Configure Other JTAG Interfaces section of ESP-IDF Programming Guide. Eg: [Section for ESP32][jtag-interfaces-esp32]
-> ⚠️ **Note**: On Windows, `USB Serial Converter A 0403 6010 00` driver should be WinUSB.
-2. Set up VSCode
-   1. Install [Cortex-Debug][cortex-debug] extension for VS Code.
-   2. Create the `.vscode/launch.json` file in the project tree you want to debug.
-   3. Update `executable`, `svdFile`, `serverpath` paths, and `toolchainPrefix` fields.
+1. 필요한 경우, 외부 JTAG 어댑터를 연결하세요.
+   1. ESP-IDF 프로그래밍 가이드의 다른 JTAG 인터페이스 구성 섹션을 참조하십시오. 예: [Section for ESP32][jtag-interfaces-esp32]
+> ⚠️ **Note**: Windows에서는, `USB Serial Converter A 0403 6010 00`드라이버가 WinUSB이어야 합니다.
+2. VSCode 설정하기
+   1. [Cortex-Debug][cortex-debug]  VS Code 확장 익스텐션 설치하기.
+   2. 디버그하려는 프로젝트 트리에  `.vscode/launch.json` 파일을 만드세요.
+   3.  `executable`, `svdFile`, `serverpath` 및 `toolchainPrefix`  필드를 업데이트하십시오.
 
 ```json
 {
@@ -75,6 +75,6 @@ OpenOCD can be used in VS Code via the [`cortex-debug`][cortex-debug] extension 
 
 [jtag-interfaces-esp32]: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/configure-other-jtag.html
 
-# Debugging with Multiple Cores
+# 여러 코어들을 디버깅하기
 
-Sometimes you may need to debug each core individually in GDB or with VSCode. In this case, change `set ESP_RTOS none` to `set ESP_RTOS hwthread`. This will make each core appear as a hardware thread in GDB. This is not currently documented in Espressif official documentation but in OpenOCD docs: https://openocd.org/doc/html/GDB-and-OpenOCD.html
+때때로 GDB 또는 VSCode에서 각 코어를 개별적으로 디버깅해야 할 수도 있습니다. 이 경우, `set ESP_RTOS none`을  `set ESP_RTOS hwthread`으로 바꾸십시오. 이것은 각 코어를 GDB의 하드웨어 스레드로 보이게 할 것이다. 이것은 현재 Espressif 공식 문서에 문서화되어 있지 않지만 OpenOCD 문서에 문서화되어 있습니다: https://openocd.org/doc/html/GDB-and-OpenOCD.html

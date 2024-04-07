@@ -1,12 +1,12 @@
-# Simulating
+# 시뮬레이팅
 
-Simulating projects can be handy. It allows users to test projects using CI, try projects without having hardware available, and many other scenarios.
+프로젝트를 시뮬레이션하는 것은 편리할 수 있다. 그것은 사용자가 CI를 사용하여 프로젝트를 테스트하고, 하드웨어를 사용할 수 없는 프로젝트와 다른 많은 시나리오를 시도할 수 있게 해준다.
 
-At the moment, there are a few ways of simulating Rust projects on Espressif chips. Every way has some limitations, but it's quickly evolving and getting better every day.
+현재, Espressif 칩에서 Rust 프로젝트를 시뮬레이션하는 몇 가지 방법이 있다. 모든 방법에는 몇 가지 한계가 있지만, 빠르게 진화하고 매일 나아지고 있다.
 
-In this chapter, we will discuss currently available simulation tools.
+이 장에서, 우리는 현재 사용 가능한 시뮬레이션 도구에 대해 논의할 것이다.
 
-Refer to the table below to see which chip is supported in every simulating method:
+모든 시뮬레이션 방법에서 어떤 칩이 지원되는지 보려면 아래 표를 참조하십시오:
 
 |              | **[Wokwi][wokwi]** | **QEMU** |
 | :----------: | :----------------: | :------: |
