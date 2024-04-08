@@ -6,7 +6,7 @@
   - 윈도우: [`python`][python-website-download] 와 [`git`][git-website-download]
   - 리눅스: [리눅스 ESP-IDF 전제조건][esp-idf-linux].
   - macOS: macOS ESP-IDF prerequisites][esp-idf-macos].
-- [`ldproxy`][embuild-github-ldproxy] binary crate: A tool that forwards linker arguments to the actual linker that is also given as an argument to `ldproxy`. Install it by running:
+  
 - [`ldproxy`][embuild-github-ldproxy] 바이너리 크레이트: `ldproxy`에 대한 인수로도 주어진 실제 링커에 링커 인수를 전달하는 도구. 실행하여 설치하세요:
   
     ```shell

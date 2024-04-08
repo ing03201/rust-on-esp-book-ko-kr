@@ -5,8 +5,6 @@
 -  [Embedded Rust on Espressif][std-book]
 -  [`std-training`][std-repository] 레포지토리
 
-The training is based on [ESP32-C3-DevKit-RUST-1][esp-rust-board]. You can use any other Espressif development board, but code changes and configuration changes might be needed.
-
 교육은 [ESP32-C3-DevKit-RUST-1][esp-rust-board]을 기반으로 합니다. 다른 Espressif 개발 보드를 사용할 수 있지만, 코드 변경과 구성 변경이 필요할 수 있습니다.
 
 * [입문 수준의 예제][intro]:

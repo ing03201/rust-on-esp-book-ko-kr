@@ -7,7 +7,6 @@
 각 Rust 릴리스에 대해, 우리는 다음과 같은 명명 규칙으로 태그를 생성합니다:
 
 - `<chip>_<rust-toolchain-version>`
-  - For example, `esp32_1.64.0.0` contains the ecosystem for developing `std`, and `no_std` applications for `ESP32` with the `1.64.0.0` `Xtensa` Rust toolchain.
   - 예를 들어, `esp32_1.64.0.0`에는 `std`를 개발하기 위한 생태계와  `1.64.0.0` `Xtensa` Rust 툴체인이 있는  `ESP32`용 `no_std` 애플리케이션이 포함되어 있습니다.
 
 특별 케이스가 있다.:
@@ -15,8 +14,6 @@
 - `<chip>`은 모든 Espressif 대상과의 호환성을 나타내는 모든 것이 될 수 있습니다.
 - `<rust-toolchain-version>` can be `latest` which indicates the latest release of the `Xtensa` Rust toolchain
 - `<rust-toolchain-version>`은  `Xtensa` Rust 툴체인의  `최신` 릴리스를 나타내는 최신일 수 있습니다.
-
-Depending on your operating system, you can choose any container runtime, such as [Docker][docker], [Podman][podman], or [Lima][lima].
 
 운영 체제에 따라 [Docker][docker], [Podman][podman], 또는 [Lima][lima]와 같은 컨테이너 런타임을 선택할 수 있습니다.
 

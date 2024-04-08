@@ -39,7 +39,7 @@ Windows (`%USERPROFILE%\export-esp.ps1`)
    이 방식은 매 새 쉘을 열때마ㅏ 실행해줘야합니다.
    
 - `export-esp.sh`를 실행하는 alias 만들기:
-   
+  
    1. 쉘 프로파일 (`.profile`, `.bashrc`, `.zprofile`, 등.)에 다음 명령어를 복사 붙여넣기 하세요: `alias get_esprs='. $HOME/export-esp.sh'`
    2. 터미널 세션을 재시작하시거나 `source [프로파일 경로]` 명령어를 실행하세요, 예를 들면, `source ~/.bashrc`.
    
@@ -70,7 +70,7 @@ fork 컴파일러는 표준 Rust 컴파일러와 공존할 수 있으며, 둘 �
 
 ### `Xtensa` Targets를 위한 다른 설치 방법
 
-- [`rust-build`][rust-build] 설치 스크립트 사용. 이것은 과거에 권장되는 방법이었지만, 이제 설치 스크립트는 기능이 frozen되었다., 모든 새로운 기능은  `espup`에만 포함될 것이다. 원본 Repository [README][https://github.com/esp-rs/rust-build.git]를 참조하십시오.
+- [`rust-build`][rust-build] 설치 스크립트 사용. 이것은 과거에 권장되는 방법이었지만, 이제 설치 스크립트는 기능이 frozen되었다. 모든 새로운 기능은  `espup`에만 포함될 것입니다. 원본 Repository [README][https://github.com/esp-rs/rust-build.git]를 참조하십시오.
 - 소스에서 `Xtensa`  Rust 컴파일러를 구축하세요. 이 과정은 계산 비용이 많이 들고 시스템에 따라 완료하는 데 한 시간 이상이 걸릴 수 있습니다. 이 접근 방식을 취할 주요 이유가 없다면 권장되지 않습니다. 여기 소스에서 빌드할 리포지토리가 있습니다: [`esp-rs/rust` repository][esp-rs-rust].
 
 [rust-build]: https://github.com/esp-rs/rust-build#download-installer-in-bash
