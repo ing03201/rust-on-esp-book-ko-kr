@@ -28,11 +28,11 @@
 > - ✅ Wi-Fi/BLE/ESP-NOW에서 대상이 적어도 나열된 기술 중 하나를 지원하는 것을 의미합니다. 자세한 내용은 esp-wifi repository의  [Current support][esp-wifi-current-support] 표를 참조하십시오.
 > - [ESP8266 HAL][esp8266-hal]은 유지보수 모드이며 이 칩에 대해서는 더 이상 개발이 이루어지지 않습니다.
 
-[esp-hal]: https://github.com/esp-rs/esp-hal "하드웨어 추상계층"
-[esp-wifi]: https://github.com/esp-rs/esp-wifi "Wi-Fi, BLE and ESP-NOW 지원"
-[esp-backtrace]: https://github.com/esp-rs/esp-backtrace "Exception 과 panic 핸들러"
-[esp-storage]: https://github.com/esp-rs/esp-storage "암호화되지 않은 플래시 메모리에 액세스할 수 있는 임베디드 스토리지 traits"
-[esp-wifi-current-support]: https://github.com/esp-rs/esp-wifi#current-support
+[esp-hal]: https://github.com/esp-rs/esp-hal/tree/main/esp-hal "하드웨어 추상계층"
+[esp-wifi]: https://github.com/esp-rs/esp-hal/tree/main/esp-wifi "Wi-Fi, BLE and ESP-NOW 지원"
+[esp-backtrace]: https://github.com/esp-rs/esp-hal/tree/main/esp-backtrace "Exception 과 panic 핸들러"
+[esp-storage]: https://github.com/esp-rs/esp-hal/tree/main/esp-storage "암호화되지 않은 플래시 메모리에 액세스할 수 있는 임베디드 스토리지 traits"
+[esp-wifi-current-support]: https://github.com/esp-rs/esp-hal/tree/main/esp-wifi#current-support
 [esp8266-hal]: https://github.com/esp-rs/esp8266-hal "ESP8266 하드웨어 추상 계층"
 
 ### `esp-rs` 관련 Crates 
@@ -55,5 +55,5 @@
 - 커스텀 요구사항들: 베어메탈을 사용하면 애플리케이션의 동작을 보다 맞춤화하고 세밀하게 제어할 수 있으므로 전문화된 환경이나 비표준 환경에서 유용하게 사용할 수 있습니다.
 
 [esp-pacs]: https://github.com/esp-rs/esp-pacs "Peripheral access crates"
-[esp-alloc]: https://github.com/esp-rs/esp-alloc "Simple heap allocator"
-[esp-println]: https://github.com/esp-rs/esp-println "print!, println!"
+[esp-alloc]: https://github.com/esp-rs/esp-hal/tree/main/esp-alloc "Simple heap allocator"
+[esp-println]: https://github.com/esp-rs/esp-hal/tree/main/esp-println "print!, println!"
