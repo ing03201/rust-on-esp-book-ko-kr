@@ -11,9 +11,8 @@
 
 특별 케이스가 있다.:
 
-- `<chip>`은 모든 Espressif 대상과의 호환성을 나타내는 모든 것이 될 수 있습니다.
-- `<rust-toolchain-version>` can be `latest` which indicates the latest release of the `Xtensa` Rust toolchain
-- `<rust-toolchain-version>`은  `Xtensa` Rust 툴체인의  `최신` 릴리스를 나타내는 최신일 수 있습니다.
+- `<chip>`은 모든 Espressif 대상과의 호환성을 나타내는 `all`이 될 수 있습니다.
+- `<rust-toolchain-version>`은 `Xtensa` Rust 툴체인의 최신 릴리스를 의미하는 `latest`가 될 수 있습니다.
 
 운영 체제에 따라 [Docker][docker], [Podman][podman], 또는 [Lima][lima]와 같은 컨테이너 런타임을 선택할 수 있습니다.
 
